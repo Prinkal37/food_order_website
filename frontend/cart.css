@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+}
+
+:root{
+    --main-color:#ff702a;
+    --text-color:#fff;
+    --bg-color:#1e1c3a;
+    --big-font:4rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem
+}
+*::selection{
+    background: var(--main-color);
+    color: #fff;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: var(--bg-color);
+}
+.logo{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+    user-select: none;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
+}
+.section1{
+    height: 45vh;
+    width: 70vw;
+    margin: auto;
+}
+.box1{
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.heading{
+    font-size: larger;
+    font-weight: bold;
+}
+.btn{
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    background-color: var(--main-color);
+    padding: 3px 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #ff5500;
+}
+.btn a{
+    font-weight: 400;
+    color: var(--text-color);
+}
+.box2a{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 85%;
+    display: flex;
+}
+.cartItems{
+    border-right: 1px solid white;
+    height: 100%;
+    width: 50%;
+    
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.cartItems::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and newer versions of Edge */
+}
+.box{
+    border: 1px solid var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    margin: 20px 0 0 20px;
+    padding: 10px 20px;
+    height: 20%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.food_details{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.box img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+.bxs-trash{
+    font-size: xx-large;
+    cursor: pointer;
+}
+.mtImg{
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    background-color: var(--bg-color);
+}
+.mtCart{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bill{
+    height: 100%;
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.billHeading{
+    font-size: larger;
+    font-weight: bold;
+    height: 3rem;
+    padding:0 1rem;
+}
+.bill-content{
+    border-top: 1px solid pink;
+    border-bottom: 1px solid pink;
+    height: 100%;
+    padding:0 1rem;
+    
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.bill-content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and newer versions of Edge */
+}
+.finalBill{
+    padding:0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bill-items{
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 2px 1rem;
+}
+.order{
+    border: 1px solid var(--main-color);
+    padding: 2px 1rem;
+    background-color: var(--main-color);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.section2{
+    height: 45vh;
+    width: 70vw;
+    margin: auto;
+}
+.history{
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 85%;
+
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.history::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and newer versions of Edge */
+}
+.H-orders{
+    border-bottom: 1px solid white;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 2rem .5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.H-orders div{
+    width: 100%;
+}
