@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS food_menu (
     id INT AUTO_INCREMENT PRIMARY KEY,
     food_name VARCHAR(255) NOT NULL,
     food_price DECIMAL(10, 2) NOT NULL,
-    food_image VARCHAR(255) NOT NULL,
+    food_image VARCHAR(255) NOT NULL
 );
 
 INSERT INTO food_menu (food_name, food_price, food_image) VALUES
@@ -73,7 +73,7 @@ run all these commands serially in you mysql
 
 
 ### how does the website work?
-1. we made the frontend design using html css and js, we used js dom(document object model) to dynamically add html elements to the website 
+1. we made the frontend design using html css and js, we used js dom(document object model) to dynamically add html elements to the website. (used for creating the menu and the cart page)
 
 2. firstly we used fetch method to retrieve the food menu from the backend and then dynamically added the data as the food menu in index.html.
 
